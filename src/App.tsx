@@ -9,11 +9,11 @@ import { CourseGoal } from "./types";
 export default function App() {
 	const [goals, setGoals] = useState<CourseGoal[]>([]);
 
-	const handleAddGoal = () => {
+	const handleAddGoal = (goal: string, summary: string) => {
 		const newGoal: CourseGoal = {
 			id: Math.random(),
-			title: "Placeholder title",
-			description: "Placeholder description",
+			title: goal,
+			description: summary,
 		};
 
 		setGoals((previousGoals) => {
@@ -30,7 +30,7 @@ export default function App() {
 			<Header image={{ src: goalsImg, alt: "A list of goals" }}>
 				<h1>You Course Goals</h1>
 			</Header>
-			<NewGoal />
+			<NewGoal onAddGoal={handleAddGoal} />
 			<CourseGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
 		</main>
 	);
