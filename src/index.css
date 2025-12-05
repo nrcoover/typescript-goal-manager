@@ -11,7 +11,6 @@ html {
 body {
 	min-height: 100vh;
 	margin: 0;
-	/* Vibrant, playful gradient */
 	background: linear-gradient(135deg, #4c1d95, #5b21b6, #0ea5e9);
 	background-size: 300% 300%;
 	animation: bgMove 24s ease infinite;
@@ -29,7 +28,6 @@ body {
 	}
 }
 
-/* Main container with glassy, modern look */
 main {
 	width: 90%;
 	max-width: 40rem;
@@ -42,7 +40,6 @@ main {
 	box-shadow: 0 10px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Header */
 header {
 	display: flex;
 	flex-direction: column;
@@ -67,7 +64,6 @@ header h1 {
 	text-shadow: 0 0 6px rgba(255, 239, 199, 0.4);
 }
 
-/* Form Fields */
 label {
 	display: block;
 	font-size: 0.85rem;
@@ -96,7 +92,6 @@ input:focus {
 	outline: none;
 }
 
-/* Add Goal Button */
 form button {
 	display: block;
 	width: 100%;
@@ -118,7 +113,6 @@ form button:hover {
 	box-shadow: 0 6px 16px rgba(250, 204, 21, 0.4);
 }
 
-/* Goals List */
 ul {
 	list-style: none;
 	margin: 2rem 0 0;
@@ -161,7 +155,6 @@ li p {
 	color: #e2e8f0;
 }
 
-/* Delete Button */
 li button {
 	font: inherit;
 	padding: 0.35rem 0.6rem;
@@ -178,7 +171,6 @@ li button:hover {
 	transform: scale(1.15);
 }
 
-/* Empty State */
 .fallback {
 	text-align: center;
 	font-size: 1.1rem;
