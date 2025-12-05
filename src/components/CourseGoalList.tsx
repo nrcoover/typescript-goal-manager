@@ -24,7 +24,7 @@ const CourseGoalList = ({ goals, onDeleteGoal }: CourseGoalListProps) => {
 
 	if (goals.length > maximumGoalsCount) {
 		warningBox = (
-			<InfoBox mode="warning" severity="high">
+			<InfoBox mode="warning" severity="medium">
 				Hm... It's good to have ambition, but are you spreading yourself too
 				thin? Why not try focusing on fewer goals for now?
 			</InfoBox>
